@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador de Texto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #007BFF;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            color: #333;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Procesador de Texto</h1>
+        <ul>
+            <li>Palabras divididas: {palabrasDivididas}</li>
+            <li>Cadena extraída: {cadenaExtraida}</li>
+            <li>Texto sin espacios: {textoSinEspacios}</li>
+            <li>Capitalizado: {capitalizado}</li>
+            <li>Minúsculas: {minusculas}</li>
+            <li>Mayúsculas: {mayusculas}</li>
+            <li>Número de caracteres: {numCaracteres}</li>
+        </ul>
+    </div>
+</body>
+
+</html>
